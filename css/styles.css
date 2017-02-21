@@ -130,6 +130,7 @@ img {
 }
 
 
+
 /* ==========================================================================
    HEADER & HERO
    ========================================================================== */
@@ -375,4 +376,18 @@ input.button:hover {
 
 .red {
   color: #871719;
+}
+
+footer {
+background-color: #161616;
+color: white;	
+}
+
+footer a:hover {
+cursor: pointer;
+color: red;	
+}
+
+.pwhat {
+text-align: right;	
 }
