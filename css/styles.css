@@ -129,6 +129,22 @@ img {
   padding: 40px 20px;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#map {
+        height: 400px;
+        width: 100%;
+	   }
 
 
 /* ==========================================================================
@@ -146,10 +162,6 @@ header {
   color: #FFFFFF;
   text-align: center;
   min-height: 80vh;
-}
-
-nav {
-  margin-top: 4em;
 }
 
 nav::after {
@@ -177,11 +189,8 @@ nav li {
   font-family: 'Roboto Slab', serif;
   font-size: 100%;
   font-weight: 700;
-  width: 24.95%;
-  max-width: 110px;
   border-bottom: none;
   display: block;
-	margin: auto;
 }
 
 
@@ -209,7 +218,9 @@ nav a:hover {
    ========================================================================== */
 
 .section {
-	margin: auto;
+	clear: both;
+	padding: 0px;
+	margin: 0px;
 }
 
 .col {
@@ -253,6 +264,10 @@ a.hero-button:hover {
 /* ==========================================================================
    FORMS
    ========================================================================== */
+
+form {
+
+}
 
 input {
   width: 90%;
@@ -305,7 +320,6 @@ input.button:hover {
 }
 
 .nwsltr-input {
-	width: 100%;
     display: block;
     border: 1px solid #c0af8e;
     border-radius: 3px;
@@ -313,7 +327,7 @@ input.button:hover {
     padding: 8px;
     margin: 0 0 10px 0;
     font-size: 100%;
-    float: left;
+    width: 100%;
 }
 
 .nwsltr-btn {
@@ -324,10 +338,9 @@ input.button:hover {
     font-size: 80%;
     text-transform: uppercase;
     font-weight: 700;
-    margin: 0 0 10px 0;
+    height: 40px;
     float: right;
-	display: block;
-	width: 100%;	
+    display: block;
 }
 
 .nwsltr-btn:hover {
@@ -374,40 +387,37 @@ input.button:hover {
 }
 
 footer {
-background-color: #161616;
-color: white;	
+    background-color: #333333;
+    color: #F2F2F2;
 }
 
-footer a:hover {
-cursor: pointer;
-color: red;	
-}
 
 /* ==========================================================================
-   Media Query
+   Media Queries
    ========================================================================== */
-   
-   @media (min-width: 994px) {
-	 .span_1_of_2 {
-  width: 48.2%;
-}  
+@media screen and (min-width: 994px) {
+  .span_1_of_2 {
+      width: 49.2%;
+  }
 
-	.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;	
-		}
-	nav li {
-	
-	display: inline-block;
-	}
-	
-	.nwsltr-input {
-		width: 80%;
-	}
-	
-	.nwsltr-btn {
-	height: 40px;
-    width: 18%;
-	}
-   }
+  nav {
+    margin-top: 4em;
+  }
+
+  nav li {
+      width: 24.95%;
+      max-width: 110px;
+      border-bottom: none;
+      display: inline-block;
+  }
+
+  .nwsltr-input {
+    width: 70%;
+    float: left;
+  }
+
+  .nwsltr-btn {
+    width: 20%;
+  }
+
+}
